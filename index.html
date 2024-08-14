@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="container bg-black mx-auto p-4">
+        <div class="flex item-center justify-between">
+            <div>
+                <img src="./src/OIP (1).jpeg" alt="portfolio" class="w-14 h-14">
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-white hover:text-yellow-300">portfolio</a>
+                <a href="#"class="text-white hover:text-yellow-300">About us</a>
+                <a href="#"class="text-white hover:text-yellow-300">Social</a>
+                <!--nav-contact-->
+                <li class="relative group">
+                  <a href="#contact" class="text-white hover:text-yellow-300">Contact</a>
+                  <div class="absolute left-0 mt-2 w-48 bg-white text-black hidden group-hover:block">
+                      <ul>
+                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">deep web</a></li>
+                          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">dark web</a></li>
+                          <li><a href="#" class="py-2 px-6 text-white bg-orange-500 hover:bg-slate-900">Call Me </a></li>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!--portfolio-->
+    <section id="portfolio" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://writersrinivasan.com/wp-content/uploads/2021/05/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546-1-768x428.jpg');">
+        <h2 class="text-4xl md:text-6xl text-white font-bold text-center">Welcome to My Portfolio</h2>
+    </section>
+    <!--about us-->
+    <section id="about us" class="p-8 bg-gray-100" style="background-image: url('https://th.bing.com/th/id/R.1d06fb65fa328dd9c769ebc4d116d6b0?rik=Hi3HsCzjT1PmaA&riu=http%3a%2f%2fwww.metromindz.com%2fblog%2fwp-content%2fuploads%2f2021%2f07%2fWA--770x515%402x.jpg&ehk=wQOuylcRPMy6YxF%2fUVIIc%2bZP8kO0DeWAb4ZPBMFxvsc%3d&risl=&pid=ImgRaw&r=0');">
+        <h3 class="text-3xl font-semibold mb-6 text-center text-white">About Us</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-4 bg-orange-500 shadow-md rounded text-center">HTML</div>
+          <div class="p-4 bg-blue-500 shadow-md rounded text-center">CSS</div>
+          <div class="p-4 bg-purple-500 shadow-md rounded text-center">Bootstrap</div>
+          <div class="p-4 bg-green-300 shadow-md rounded text-center">Tailwind CSS</div>
+        </div>
+      </section>
+      <!--social-->
+      <section id="Social" class="p-8" style="background-image: url('https://th.bing.com/th/id/OIP.OiZhGS5AQXm2P-0WaYwPigHaEK?rs=1&pid=ImgDetMain');">
+        <h3 class="text-3xl font-semibold mb-6 text-center text-white">Social</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Repeat for each project -->
+          <div class="bg-white shadow-md rounded overflow-hidden">
+            <img src="https://prioritynetworks.ca/wp-content/uploads/2021/01/iStock-1169873646-scaled.jpg" alt="Social" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="text-xl font-bold">devlopment web</h4>
+              <p class="text-gray-600">programming is one of the most important things of our time</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--contact-->
+      <section id="contact" class="p-8 bg-gray-100" style="background-image: url('https://miro.medium.com/v2/resize:fit:768/1*jyvi6rdhEWdbKbybyuht9w.png');">
+        <h3 class="text-3xl font-semibold mb-6 text-center text-white">Contact Me</h3>
+        <form class="max-w-lg mx-auto space-y-4">
+          <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded">
+          <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded">
+          <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600">Send</button>
+        </form>
+      </section>
+      <footer class="bg-gray-800 text-white p-4 flex justify-between items-center">
+        <p>&copy; 2024 Your Name </p>
+        <div class="flex space-x-4">
+          <!-- Repeat for each social media -->
+          <a href="#" class="hover:text-yellow-500"></a>
+          <!--social networking sites-->
+          <div class="flex gap-4">
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="https://th.bing.com/th/id/OIP.a_6aspDkOm9An25V6gnS2AHaHa?rs=1&pid=ImgDetMain" alt="Facebook" class="w-8 h-8 rounded-full">
+            </a>
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="https://th.bing.com/th/id/R.3d28ff490ba6ec21f4d5686663690570?rik=%2bL1046YViR%2fVgA&pid=ImgRaw&r=0" alt="Twitter" class="w-8 h-8 rounded-full">
+            </a>
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?rs=1&pid=ImgDetMain" alt="Instagram" class="w-8 h-8 rounded-full">
+            </a>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
